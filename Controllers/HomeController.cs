@@ -6,11 +6,19 @@ namespace project_of_mvc.Controllers
     {
         public ActionResult Index()
         {
-            return RedirectToAction("About Us");
+            return View();
         }
-        public string AboutUs()
+        public ActionResult AboutUs()
         {
-            return "this is About Us";
+            return View();
+        }
+        public ActionResult  ContactUs()
+        {
+            return View();
+        }
+        public ActionResult Privacy()
+        {
+            return View();
         }
     }
 }

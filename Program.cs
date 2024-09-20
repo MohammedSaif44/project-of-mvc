@@ -5,9 +5,10 @@ namespace project_of_mvc
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-            builder.Services.AddControllers();
+            builder.Services.AddControllersWithViews();
             var app = builder.Build();
             app.UseRouting();
+            app.UseStaticFiles(); 
             //app.UseEndpoints(Endpoint =>
             //{
             //    Endpoint.MapGet("/Home", async context =>
